@@ -38,7 +38,7 @@ function askQuestion() {
     }
     else {
         // show question
-        var element = document.getElementById("question");
+        var element = document.getElementById("lang");
         element.innerHTML = quiz.getQuestionIndex().text;
 
         // show options
@@ -68,11 +68,11 @@ function showScores() {
 
 // creating questions
 var questions = [
-    new Question("Hyper Text Markup Language Stand For?", ["JavaScript", "XHTML","CSS", "HTML"], "HTML"),
-    new Question("Which language is used for styling web pages?", ["HTML", "JQuery", "CSS", "XML"], "CSS"),
-    new Question("Which is not a JavaScript Framework?", ["Python Script", "JQuery","Django", "NodeJS"], "Django"),
-    new Question("Which is used for Connect To Database?", ["PHP", "HTML", "JS", "All"], "PHP"),
-    new Question("Webdevtrick.com is about..", ["Web Design", "Graphic Design", "SEO & Development", "All"], "All")
+    new Question("...in Finnish?", ["Ciao", "Bye","Moi"], "Moi"),
+    new Question("...in Spanish?", ["Marhaba", "Hola", "Ahoj"], "Hola"),
+    new Question("...in Russian?", ["Zdravo", "Hujambo","Zdravstvuyte"], "Zdravstvuyte"),
+    new Question("...in Bengali?", ["God dag", "Namaskar", "Bonjour"], "Namaskar"),
+    new Question("...in Swahili", ["Hujambo", "Hallå", "Merhaba"], "Hujambo")
 ];
 
 // creating quiz
