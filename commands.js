@@ -43,6 +43,7 @@ function askQuestion() {
 
         // show options
         var choices = quiz.getQuestionIndex().choices;
+        // var images = quiz.getQuestionIndex().images;
         for(var i = 0; i < choices.length; i++) {
             var element = document.getElementById("choice" + i);
             element.innerHTML = choices[i];

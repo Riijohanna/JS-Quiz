@@ -32,22 +32,25 @@ body {
     font-family: "monospace";
     font-size: 30px;
     color:  #ffcc66;
+    display: inline-block;
 }
 .base #flag {
     font-family: "monospace";
     font-size: 20px;
     background-color: #ffcc66;
-    padding: 10px 20px 20px 20px;
+    padding: 20px 20px 20px 60px;
     text-align: left;
+    display: flex;
 }
 .base #lang {
     font-family: "monospace";
     font-size: 20px;
     background-color: #cad3d6;
-    padding: 10px 20px 20px 20px;
-    text-align: right;
-    width: 250px;
-    margin-left: 250px;
+    padding: 30px 10px 10px 10px;
+    text-align: center;
+    width: 200px;
+    margin-left: 100px;
+    border-radius: 20px;
 }
 .buttons {
   display: flex;
@@ -55,6 +58,10 @@ body {
    align-items: center;
     margin-top: 20px;
 
+}
+img {
+  width: 128px;
+  height: 128px;
 }
 
 #btn0, #btn1, #btn2 { border-radius: 5px;
