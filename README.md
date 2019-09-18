@@ -1,2 +1,3 @@
 # JS-Quiz Check the demo here: https://riijohanna.github.io/JS-Quiz/
 School project with Javascript. 
+A more advanced version would be to convert it working with JSON. Coming later...
