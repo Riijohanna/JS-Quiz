@@ -52,7 +52,7 @@ body {
     margin-left: 100px;
     border-radius: 20px;
 }
-.buttons {
+#buttons {
   display: flex;
    flex-direction: column;
    align-items: center;
@@ -63,7 +63,10 @@ img {
   width: 128px;
   height: 128px;
 }
-
+#image {
+  width: 128px;
+  height: 128px;
+}
 #btn0, #btn1, #btn2 { border-radius: 5px;
     background-color: #ffcc66;
     width: 250px;

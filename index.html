@@ -5,17 +5,18 @@
     <title>Test yourself</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+  <body>
     <div class="base">
         <div id="quiz">
             <h1>How do you say hello in </h1>
             <p id="question">
             <div id="flag">
-              <div id='image'>
-                <img src="img\finland.png" alt="Finland" width="128" height="128"></div>
+              <div>
+                <img id='image' src="img\finland.png" alt="Finland" width="128" height="128">
+              </div>
               <p id="lang"></p>
               </div></p>
-            <div class="buttons">
+            <div id="buttons">
                 <button id="btn0"><span id="choice0"></span></button>
                 <button id="btn1"><span id="choice1"></span></button>
                 <button id="btn2"><span id="choice2"></span></button>
@@ -24,6 +25,15 @@
             </footer>
         </div>
     </div>
-<script src="commands.js"></script>
+<script src="commands1.js"></script>
+<script type="text/javascript">
+        let pic = ['img/Finland.png', 'img/Spain.png', 'img/Russia.png', 'img/Bangladesh.png', 'img/Kenya.png'];
+        let imageNumber = 0;
+        document.getElementById("buttons").addEventListener("click", changeImage);
+        function changeImage() {
+            imageNumber = (imageNumber + 1) % pic.length;
+            document.getElementById("image").src = pic[imageNumber];
+        }
+    </script>
 </body>
 </html>

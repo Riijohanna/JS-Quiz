@@ -22,6 +22,7 @@ Quiz.prototype.isEnded = function() {
 
 
 function Question(text, choices, answer) {
+    // this.image = image;
     this.text = text;
     this.choices = choices;
     this.answer = answer;
